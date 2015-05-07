@@ -1,0 +1,91 @@
+<head>
+    <meta charset="UTF-8">
+    <title>just for preview</title>
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="main-wrapper">
+        <nav class="clearfix">
+            <div class="container">
+                <ul>
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="">Chronicle</a></li>
+                    <li><a href="">Intro</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="container">
+            
+            <div class="main">
+               
+                <div class="menu">
+                    <ul class=" clearfix">
+                        <li class="active">全部</li>
+                        <li>SH</li>
+                        <li>音乐</li>
+                        <li>漫画</li>
+                        <li>游戏</li>
+                        
+                        <li class="menu-form">
+                            <form action="">
+                                <input type="text" placeholder="Search…">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!--  post list  -->
+                <div class="content-wrap">
+                   
+                    {{> postsList}}
+                    
+                </div>
+            </div>
+            
+            
+<!--           aside menu -->
+            <div class="sidebar">
+                <div class="user-avatar">
+                    <img src="images/avatars0.jpg" alt="">
+                </div>
+                
+                <div class="user-info">
+                    <div class="basic-info">
+                        <h2>894mayo</h2>
+                        <a href="">@mayo</a>
+                        <p>做人当作大渣渣呀呀作大渣渣呀呀丫丫丫！！</p>
+                    </div>
+                    
+                    <div class="score-info">
+                        <p>积分<b>6666</b></p>
+                        <p>大好き屋<b>0</b>住人</p>
+                    </div>
+                    
+                    <button id="new-post">发新话题</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <span>copyright &copy; 2015 mayo</span>
+        </div>
+    </footer>
+    
+    <script>
+        var mainWrap = document.querySelector('.main');
+        window.addEventListener('resize', function(e) {
+            mainWrap.style.height = (document.body.clientHeight - 110) + 'px';
+            mainWrap.style.overflowY = 'auto'
+        }, false)
+        
+        window.onload = function() {
+            mainWrap.style.height = (document.body.clientHeight - 110) + 'px';
+        }
+    </script>
+</body>

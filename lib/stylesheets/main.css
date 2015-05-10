@@ -90,6 +90,7 @@ footer span {
     vertical-align: top;
     float: left;
     width: 940px;
+    padding: 10px;
     background-color: rgba(247,247,247,.95);
     border-radius: 5px;
     box-shadow: 2px 2px 5px 2px rgba(0,0,0,.05);
@@ -114,12 +115,11 @@ footer span {
 
 /** main **/
 
-.main .menu ul {
+.main .main-menu ul {
     border-bottom: 3px solid #d9dada;
-    margin: 6px 10px 0;
 }
 
-.main .menu ul li {
+.main .main-menu ul li {
     float: left;
     width: 60px;
     text-align: center;
@@ -134,23 +134,23 @@ footer span {
     transition: all 500ms;
 }
 
-.main .menu ul li.active {
+.main .main-menu ul li.active {
     opacity: 1;
 }
 
-.main .menu ul li.menu-form {
+.main .main-menu ul li.menu-form {
     float: right;
     width: auto;
     line-height: 1;
     padding: 0;
 }
 
-.main .menu ul li.menu-form form {
+.main .main-menu ul li.menu-form form {
     position: relative;
     bottom: -4px;
 }
 
-.main .menu ul li.menu-form input {
+.main .main-menu ul li.menu-form input {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -166,7 +166,6 @@ footer span {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 0 10px 10px;
 }
 
 .post-item {
@@ -227,6 +226,7 @@ footer span {
 .post-item .status strong {
     display: inline-block;
     vertical-align: middle;
+    margin-right: 4px;
     font-size: 20px;
     color: #0cc16a;
     font-weight: normal;

@@ -1,0 +1,28 @@
+<template name="mainWrap">
+    <!-- main wrap           -->
+    <div class="main">
+
+        <div class="main-menu">
+            <ul class=" clearfix">
+                <li class="active">全部</li>
+                <li>SH</li>
+                <li>音乐</li>
+                <li>漫画</li>
+                <li>游戏</li>
+
+                <li class="menu-form">
+                    <form action="">
+                        <input type="text" placeholder="Search…">
+                    </form>
+                </li>
+            </ul>
+        </div>
+
+        <!--  post list  -->
+        <div class="content-wrap">
+
+            {{> postsList}}
+
+        </div>
+    </div>
+</template>

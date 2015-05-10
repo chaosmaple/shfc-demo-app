@@ -1,0 +1,31 @@
+<template name="layout">
+    
+    <div class="main-wrapper">
+        <nav class="clearfix">
+            <div class="container">
+                <ul>
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="">Chronicle</a></li>
+                    <li><a href="">Intro</a></li>
+                </ul>
+                
+                <ul style="float: right;">
+                    <li>{{> loginButtons}}</li>
+                </ul>
+                
+            </div>
+        </nav>
+        
+        <div class="container">    
+            
+            {{> yield}}
+            
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <span>copyright &copy; 2015 SHFC</span>
+        </div>
+    </footer>
+</template>

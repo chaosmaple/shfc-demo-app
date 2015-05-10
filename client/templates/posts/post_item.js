@@ -1,3 +1,0 @@
-Template.postItem.helpers({
-    
-});

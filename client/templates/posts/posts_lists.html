@@ -3,3 +3,19 @@
         {{> postItem}}
     {{/each}}
 </template>
+
+<template name="postItem">
+    <div class="post-item">
+        <div class="avatar">
+            <img src="images/avatars0.jpg" alt="">
+        </div>
+        <div class="summary">
+            <h2><a href="{{pathFor 'postContent'}}">{{title}}</a></h2>
+            <p>Posted by <a href="">{{postUser}}</a> <span>3 days ago</span></p>
+        </div>
+        <div class="status">
+            <strong>{{disQuan}}</strong><img src="images/discuss.png" alt="">
+            <p>Last replied form <a href="">{{lastRe}}</a></p>
+        </div>
+    </div>
+</template>
